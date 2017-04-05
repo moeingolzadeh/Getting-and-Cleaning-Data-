@@ -1,7 +1,7 @@
 packages <- c("data.table", "reshape2", "dplyr")
 sapply(packages, require, character.only=TRUE, quietly=TRUE)
 path <- getwd()
-rojectDataPath <- file.path(path, "project_data")
+projectDataPath <- file.path(path, "Data Project")
 fileCount <- length(list.files(projectDataPath, recursive=TRUE))
 if (fileCount != 28) {
   stop("Please use setwd() to the root of the cloned repository.")
